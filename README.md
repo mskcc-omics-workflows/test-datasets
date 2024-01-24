@@ -1,1 +1,4 @@
-Test datasets for MSK modules or subworkflows added into modules repo
+## Test FASTQ files
+
+1. Sequencing metadata files
+2. raw fastq files from demultiplexing directly
