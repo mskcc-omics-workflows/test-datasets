@@ -1,0 +1,486 @@
+# /usr/local/bin/netMHCpan-4.1/Linux_x86_64/bin/netMHCpan -s 1 -BA 1 -f ./test_out/test.WT_sequences.fa -a HLA-A24:02,HLA-A24:02,HLA-B39:01,HLA-B39:01,HLA-C07:01,HLA-C06:02 -l 9,10 -inptype 0 -xls -xlsfile test.WT.xls
+# Mon Mar 18 02:19:46 2024
+# User: root
+# PWD : /Users/orgeraj/Documents/GitHub/modulesnetMHCpan/.nf-test/tests/2bea0852c466bd994e1760f47a0b6fd/work/ef/9aab07209a084028cdcf0bdc7a2574
+# Host: Linux a465b7592c12 6.6.12-linuxkit x86_64
+# -s       1                    Sort output on descending affinity
+# -BA      1                    Include Binding affinity prediction
+# -f       ./test_out/test.WT_sequences.fa File name with input
+# -a       HLA-A24:02,HLA-A24:02,HLA-B39:01,HLA-B39:01,HLA-C07:01,HLA-C06:02 MHC allele
+# -l       9,10                 Peptide length [8-11] (multiple length with ,)
+# -inptype 0                    Input type [0] FASTA [1] Peptide
+# -xls     1                    Save output to xls file
+# -xlsfile test.WT.xls          Filename for xls dump
+# Command line parameters set to:
+#	[-rdir filename]     /usr/local/bin/netMHCpan-4.1/Linux_x86_64 Home directory for NetMHpan
+#	[-syn filename]      /usr/local/bin/netMHCpan-4.1/Linux_x86_64/data/synlist.bin Synaps file
+#	[-v]                 0                    Verbose mode
+#	[-dirty]             0                    Dirty mode, leave tmp dir+files
+#	[-tdir filename]     /tmp/netMHCpanXXXXXX Temporary directory (made with mkdtemp)
+#	[-hlapseudo filename] /usr/local/bin/netMHCpan-4.1/Linux_x86_64/data/MHC_pseudo.dat File with MHC pseudo sequences
+#	[-hlaseq filename]                        File with full length MHC sequences
+#	[-a line]            HLA-A24:02,HLA-A24:02,HLA-B39:01,HLA-B39:01,HLA-C07:01,HLA-C06:02 MHC allele
+#	[-f filename]        ./test_out/test.WT_sequences.fa File name with input
+#	[-w]                 0                    w option for webface
+#	[-s]                 1                    Sort output on descending affinity
+#	[-p]                 0                    Use peptide input
+#	[-rth float]         0.500000             Rank Threshold for high binding peptides
+#	[-rlt float]         2.000000             Rank Threshold for low binding peptides
+#	[-l string]          9,10                 Peptide length [8-11] (multiple length with ,)
+#	[-xls]               1                    Save output to xls file
+#	[-xlsfile filename]  test.WT.xls          Filename for xls dump
+#	[-t float]           -99.900002           Threshold for output (%rank) [<0 print all]
+#	[-thrfmt filename]   /usr/local/bin/netMHCpan-4.1/Linux_x86_64/data/threshold/%s.thr.%s Format for threshold filenames
+#	[-expfix]            0                    Exclude prefix from synlist
+#	[-version filename]  /usr/local/bin/netMHCpan-4.1/Linux_x86_64/data/version File with version information
+#	[-inptype int]       0                    Input type [0] FASTA [1] Peptide
+#	[-listMHC]           0                    Print list of alleles included in netMHCpan
+#	[-allname filename]  /usr/local/bin/netMHCpan-4.1/Linux_x86_64/data/allelenames File with print names for alleles
+#	[-BA]                1                    Include Binding affinity prediction
+
+# NetMHCpan version 4.1b
+
+# Tmpdir made /tmp/netMHCpanw0CV8L
+# Input is in FSA format
+
+# Peptide length 9,10
+
+# Make both EL and BA predictions
+
+HLA-A24:02 : Distance to training data  0.000 (using nearest neighbor HLA-A24:02)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   4 HLA-A*24:02      NHQNIVRCI NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0071410    4.701 0.117704    7.085 13992.09
+   2 HLA-A*24:02      KFNHQNIVR KFNHQNIVR  0  0  0  0  0    KFNHQNIVR 2_29443672-C_T_ 0.0009690   11.060 0.049664   21.040 29214.62
+   2 HLA-A*24:02     KFNHQNIVRC KFNQNIVRC  0  3  1  0  0   KFNHQNIVRC 2_29443672-C_T_ 0.0005760   13.685 0.059063   17.270 26389.71
+   8 HLA-A*24:02      IVRCIGVSL IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0004660   14.833 0.067225   14.768 24159.16
+   3 HLA-A*24:02     FNHQNIVRCI FHQNIVRCI  0  1  1  0  0   FNHQNIVRCI 2_29443672-C_T_ 0.0003400   16.764 0.082195   11.557 20546.52
+  10 HLA-A*24:02     RCIGVSLQSL RCIGVLQSL  0  5  1  0  0   RCIGVSLQSL 2_29443672-C_T_ 0.0003040   17.511 0.061875   16.350 25598.90
+  11 HLA-A*24:02      CIGVSLQSL CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0002600   18.579 0.076014   12.742 21967.60
+   1 HLA-A*24:02     SKFNHQNIVR SFNHQNIVR  0  1  1  0  0   SKFNHQNIVR 2_29443672-C_T_ 0.0002090   20.148 0.031601   33.994 35520.39
+   1 HLA-A*24:02      SKFNHQNIV SKFNHQNIV  0  0  0  0  0    SKFNHQNIV 2_29443672-C_T_ 0.0001100   25.417 0.026437   40.520 37561.54
+   3 HLA-A*24:02      FNHQNIVRC FNHQNIVRC  0  0  0  0  0    FNHQNIVRC 2_29443672-C_T_ 0.0000380   36.333 0.022254   47.460 39300.60
+   7 HLA-A*24:02     NIVRCIGVSL NIVRIGVSL  0  4  1  0  0   NIVRCIGVSL 2_29443672-C_T_ 0.0000360   37.000 0.039707   26.939 32537.79
+  13 HLA-A*24:02      GVSLQSLPR GVSLQSLPR  0  0  0  0  0    GVSLQSLPR 2_29443672-C_T_ 0.0000250   41.500 0.019064   54.058 40680.73
+   9 HLA-A*24:02      VRCIGVSLQ VRCIGVSLQ  0  0  0  0  0    VRCIGVSLQ 2_29443672-C_T_ 0.0000190   45.000 0.012419   72.768 43713.30
+   6 HLA-A*24:02      QNIVRCIGV QNIVRCIGV  0  0  0  0  0    QNIVRCIGV 2_29443672-C_T_ 0.0000190   45.000 0.032507   33.069 35173.90
+  12 HLA-A*24:02      IGVSLQSLP IGVSLQSLP  0  0  0  0  0    IGVSLQSLP 2_29443672-C_T_ 0.0000140   49.000 0.021694   48.475 39539.44
+   5 HLA-A*24:02     HQNIVRCIGV HQNIVRIGV  0  6  1  0  0   HQNIVRCIGV 2_29443672-C_T_ 0.0000140   49.000 0.041293   25.818 31984.19
+  12 HLA-A*24:02     IGVSLQSLPR IGVSLQSLR  0  8  1  0  0   IGVSLQSLPR 2_29443672-C_T_ 0.0000130   50.000 0.025511   41.900 37939.75
+   4 HLA-A*24:02     NHQNIVRCIG NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0000070   58.333 0.033218   32.363 34904.34
+   9 HLA-A*24:02     VRCIGVSLQS VRIGVSLQS  0  2  1  0  0   VRCIGVSLQS 2_29443672-C_T_ 0.0000050   65.000 0.015130   64.189 42449.70
+  10 HLA-A*24:02      RCIGVSLQS RCIGVSLQS  0  0  0  0  0    RCIGVSLQS 2_29443672-C_T_ 0.0000040   67.500 0.015176   64.059 42428.57
+   5 HLA-A*24:02      HQNIVRCIG HQNIVRCIG  0  0  0  0  0    HQNIVRCIG 2_29443672-C_T_ 0.0000040   67.500 0.029043   36.979 36517.22
+   8 HLA-A*24:02     IVRCIGVSLQ IRCIGVSLQ  0  1  1  0  0   IVRCIGVSLQ 2_29443672-C_T_ 0.0000030   70.000 0.017585   57.596 41336.98
+  11 HLA-A*24:02     CIGVSLQSLP CIGSLQSLP  0  3  1  0  0   CIGVSLQSLP 2_29443672-C_T_ 0.0000010   90.000 0.022749   46.581 39090.67
+   7 HLA-A*24:02      NIVRCIGVS NIVRCIGVS  0  0  0  0  0    NIVRCIGVS 2_29443672-C_T_ 0.0000000  100.000 0.012426   72.745 43709.97
+   6 HLA-A*24:02     QNIVRCIGVS QNIVRCIVS  0  7  1  0  0   QNIVRCIGVS 2_29443672-C_T_ 0.0000000  100.000 0.015057   64.395 42483.23
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_29443672-C_T_. Allele HLA-A*24:02. Number of high binders 0. Number of weak binders 0. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   8 HLA-A*24:02      RVYARDLLL RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0320100    2.354 0.275712    1.771  2531.67
+   2 HLA-A*24:02      VVPSLFRVY VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0279010    2.495 0.126154    6.402 12769.57
+   9 HLA-A*24:02      VYARDLLLP VYARDLLLP  0  0  0  0  0    VYARDLLLP 2_30143324-C_A_ 0.0119560    3.740 0.182432    3.639  6945.88
+   1 HLA-A*24:02      FVVPSLFRV FVVPSLFRV  0  0  0  0  0    FVVPSLFRV 2_30143324-C_A_ 0.0041150    6.054 0.115996    7.233 14253.07
+   6 HLA-A*24:02      LFRVYARDL LFRVYARDL  0  0  0  0  0    LFRVYARDL 2_30143324-C_A_ 0.0012510    9.974 0.101722    8.646 16633.41
+   6 HLA-A*24:02     LFRVYARDLL LFVYARDLL  0  2  1  0  0   LFRVYARDLL 2_30143324-C_A_ 0.0012330   10.034 0.190085    3.410  6393.91
+   7 HLA-A*24:02     FRVYARDLLL FRYARDLLL  0  2  1  0  0   FRVYARDLLL 2_30143324-C_A_ 0.0010760   10.634 0.114084    7.398 14551.00
+   9 HLA-A*24:02     VYARDLLLPP VYARDLLLP  0  8  1  0  0   VYARDLLLPP 2_30143324-C_A_ 0.0008690   11.603 0.136736    5.710 11388.11
+   7 HLA-A*24:02      FRVYARDLL FRVYARDLL  0  0  0  0  0    FRVYARDLL 2_30143324-C_A_ 0.0006660   12.903 0.062558   16.131 25410.42
+   1 HLA-A*24:02     FVVPSLFRVY FVPSLFRVY  0  1  1  0  0   FVVPSLFRVY 2_30143324-C_A_ 0.0006640   12.917 0.065655   15.203 24573.05
+   8 HLA-A*24:02     RVYARDLLLP RYARDLLLP  0  1  1  0  0   RVYARDLLLP 2_30143324-C_A_ 0.0006530   12.993 0.111838    7.599 14908.94
+   5 HLA-A*24:02     SLFRVYARDL SLFRVYARL  0  8  1  0  0   SLFRVYARDL 2_30143324-C_A_ 0.0001700   21.727 0.090378   10.217 18805.57
+   2 HLA-A*24:02     VVPSLFRVYA VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0001210   24.571 0.056849   18.038 27029.51
+   4 HLA-A*24:02      PSLFRVYAR PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000410   35.500 0.034242   31.375 34519.78
+   3 HLA-A*24:02      VPSLFRVYA VPSLFRVYA  0  0  0  0  0    VPSLFRVYA 2_30143324-C_A_ 0.0000300   39.000 0.027381   39.162 37179.84
+   3 HLA-A*24:02     VPSLFRVYAR VPSLRVYAR  0  4  1  0  0   VPSLFRVYAR 2_30143324-C_A_ 0.0000290   39.500 0.034138   31.474 34558.62
+  11 HLA-A*24:02      ARDLLLPPS ARDLLLPPS  0  0  0  0  0    ARDLLLPPS 2_30143324-C_A_ 0.0000240   42.000 0.019944   52.120 40295.23
+   5 HLA-A*24:02      SLFRVYARD SLFRVYARD  0  0  0  0  0    SLFRVYARD 2_30143324-C_A_ 0.0000180   45.500 0.040393   26.447 32297.17
+  13 HLA-A*24:02      DLLLPPSSS DLLLPPSSS  0  0  0  0  0    DLLLPPSSS 2_30143324-C_A_ 0.0000110   52.500 0.011303   76.574 44244.32
+  12 HLA-A*24:02      RDLLLPPSS RDLLLPPSS  0  0  0  0  0    RDLLLPPSS 2_30143324-C_A_ 0.0000100   53.750 0.017148   58.676 41532.88
+  10 HLA-A*24:02      YARDLLLPP YARDLLLPP  0  0  0  0  0    YARDLLLPP 2_30143324-C_A_ 0.0000070   58.333 0.022299   47.380 39281.47
+  11 HLA-A*24:02     ARDLLLPPSS ARDLLPPSS  0  3  1  0  0   ARDLLLPPSS 2_30143324-C_A_ 0.0000070   58.333 0.015918   61.962 42089.30
+  12 HLA-A*24:02     RDLLLPPSSS RLLLPPSSS  0  1  1  0  0   RDLLLPPSSS 2_30143324-C_A_ 0.0000040   67.500 0.016875   59.350 41655.73
+  10 HLA-A*24:02     YARDLLLPPS YRDLLLPPS  0  1  1  0  0   YARDLLLPPS 2_30143324-C_A_ 0.0000020   80.000 0.026718   40.126 37447.50
+   4 HLA-A*24:02     PSLFRVYARD PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000010   90.000 0.022296   47.386 39282.73
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_30143324-C_A_. Allele HLA-A*24:02. Number of high binders 0. Number of weak binders 0. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+
+HLA-A24:02 : Distance to training data  0.000 (using nearest neighbor HLA-A24:02)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   4 HLA-A*24:02      NHQNIVRCI NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0071410    4.701 0.117704    7.085 13992.09
+   2 HLA-A*24:02      KFNHQNIVR KFNHQNIVR  0  0  0  0  0    KFNHQNIVR 2_29443672-C_T_ 0.0009690   11.060 0.049664   21.040 29214.62
+   2 HLA-A*24:02     KFNHQNIVRC KFNQNIVRC  0  3  1  0  0   KFNHQNIVRC 2_29443672-C_T_ 0.0005760   13.685 0.059063   17.270 26389.71
+   8 HLA-A*24:02      IVRCIGVSL IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0004660   14.833 0.067225   14.768 24159.16
+   3 HLA-A*24:02     FNHQNIVRCI FHQNIVRCI  0  1  1  0  0   FNHQNIVRCI 2_29443672-C_T_ 0.0003400   16.764 0.082195   11.557 20546.52
+  10 HLA-A*24:02     RCIGVSLQSL RCIGVLQSL  0  5  1  0  0   RCIGVSLQSL 2_29443672-C_T_ 0.0003040   17.511 0.061875   16.350 25598.90
+  11 HLA-A*24:02      CIGVSLQSL CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0002600   18.579 0.076014   12.742 21967.60
+   1 HLA-A*24:02     SKFNHQNIVR SFNHQNIVR  0  1  1  0  0   SKFNHQNIVR 2_29443672-C_T_ 0.0002090   20.148 0.031601   33.994 35520.39
+   1 HLA-A*24:02      SKFNHQNIV SKFNHQNIV  0  0  0  0  0    SKFNHQNIV 2_29443672-C_T_ 0.0001100   25.417 0.026437   40.520 37561.54
+   3 HLA-A*24:02      FNHQNIVRC FNHQNIVRC  0  0  0  0  0    FNHQNIVRC 2_29443672-C_T_ 0.0000380   36.333 0.022254   47.460 39300.60
+   7 HLA-A*24:02     NIVRCIGVSL NIVRIGVSL  0  4  1  0  0   NIVRCIGVSL 2_29443672-C_T_ 0.0000360   37.000 0.039707   26.939 32537.79
+  13 HLA-A*24:02      GVSLQSLPR GVSLQSLPR  0  0  0  0  0    GVSLQSLPR 2_29443672-C_T_ 0.0000250   41.500 0.019064   54.058 40680.73
+   9 HLA-A*24:02      VRCIGVSLQ VRCIGVSLQ  0  0  0  0  0    VRCIGVSLQ 2_29443672-C_T_ 0.0000190   45.000 0.012419   72.768 43713.30
+   6 HLA-A*24:02      QNIVRCIGV QNIVRCIGV  0  0  0  0  0    QNIVRCIGV 2_29443672-C_T_ 0.0000190   45.000 0.032507   33.069 35173.90
+  12 HLA-A*24:02      IGVSLQSLP IGVSLQSLP  0  0  0  0  0    IGVSLQSLP 2_29443672-C_T_ 0.0000140   49.000 0.021694   48.475 39539.44
+   5 HLA-A*24:02     HQNIVRCIGV HQNIVRIGV  0  6  1  0  0   HQNIVRCIGV 2_29443672-C_T_ 0.0000140   49.000 0.041293   25.818 31984.19
+  12 HLA-A*24:02     IGVSLQSLPR IGVSLQSLR  0  8  1  0  0   IGVSLQSLPR 2_29443672-C_T_ 0.0000130   50.000 0.025511   41.900 37939.75
+   4 HLA-A*24:02     NHQNIVRCIG NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0000070   58.333 0.033218   32.363 34904.34
+   9 HLA-A*24:02     VRCIGVSLQS VRIGVSLQS  0  2  1  0  0   VRCIGVSLQS 2_29443672-C_T_ 0.0000050   65.000 0.015130   64.189 42449.70
+  10 HLA-A*24:02      RCIGVSLQS RCIGVSLQS  0  0  0  0  0    RCIGVSLQS 2_29443672-C_T_ 0.0000040   67.500 0.015176   64.059 42428.57
+   5 HLA-A*24:02      HQNIVRCIG HQNIVRCIG  0  0  0  0  0    HQNIVRCIG 2_29443672-C_T_ 0.0000040   67.500 0.029043   36.979 36517.22
+   8 HLA-A*24:02     IVRCIGVSLQ IRCIGVSLQ  0  1  1  0  0   IVRCIGVSLQ 2_29443672-C_T_ 0.0000030   70.000 0.017585   57.596 41336.98
+  11 HLA-A*24:02     CIGVSLQSLP CIGSLQSLP  0  3  1  0  0   CIGVSLQSLP 2_29443672-C_T_ 0.0000010   90.000 0.022749   46.581 39090.67
+   7 HLA-A*24:02      NIVRCIGVS NIVRCIGVS  0  0  0  0  0    NIVRCIGVS 2_29443672-C_T_ 0.0000000  100.000 0.012426   72.745 43709.97
+   6 HLA-A*24:02     QNIVRCIGVS QNIVRCIVS  0  7  1  0  0   QNIVRCIGVS 2_29443672-C_T_ 0.0000000  100.000 0.015057   64.395 42483.23
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_29443672-C_T_. Allele HLA-A*24:02. Number of high binders 0. Number of weak binders 0. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   8 HLA-A*24:02      RVYARDLLL RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0320100    2.354 0.275712    1.771  2531.67
+   2 HLA-A*24:02      VVPSLFRVY VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0279010    2.495 0.126154    6.402 12769.57
+   9 HLA-A*24:02      VYARDLLLP VYARDLLLP  0  0  0  0  0    VYARDLLLP 2_30143324-C_A_ 0.0119560    3.740 0.182432    3.639  6945.88
+   1 HLA-A*24:02      FVVPSLFRV FVVPSLFRV  0  0  0  0  0    FVVPSLFRV 2_30143324-C_A_ 0.0041150    6.054 0.115996    7.233 14253.07
+   6 HLA-A*24:02      LFRVYARDL LFRVYARDL  0  0  0  0  0    LFRVYARDL 2_30143324-C_A_ 0.0012510    9.974 0.101722    8.646 16633.41
+   6 HLA-A*24:02     LFRVYARDLL LFVYARDLL  0  2  1  0  0   LFRVYARDLL 2_30143324-C_A_ 0.0012330   10.034 0.190085    3.410  6393.91
+   7 HLA-A*24:02     FRVYARDLLL FRYARDLLL  0  2  1  0  0   FRVYARDLLL 2_30143324-C_A_ 0.0010760   10.634 0.114084    7.398 14551.00
+   9 HLA-A*24:02     VYARDLLLPP VYARDLLLP  0  8  1  0  0   VYARDLLLPP 2_30143324-C_A_ 0.0008690   11.603 0.136736    5.710 11388.11
+   7 HLA-A*24:02      FRVYARDLL FRVYARDLL  0  0  0  0  0    FRVYARDLL 2_30143324-C_A_ 0.0006660   12.903 0.062558   16.131 25410.42
+   1 HLA-A*24:02     FVVPSLFRVY FVPSLFRVY  0  1  1  0  0   FVVPSLFRVY 2_30143324-C_A_ 0.0006640   12.917 0.065655   15.203 24573.05
+   8 HLA-A*24:02     RVYARDLLLP RYARDLLLP  0  1  1  0  0   RVYARDLLLP 2_30143324-C_A_ 0.0006530   12.993 0.111838    7.599 14908.94
+   5 HLA-A*24:02     SLFRVYARDL SLFRVYARL  0  8  1  0  0   SLFRVYARDL 2_30143324-C_A_ 0.0001700   21.727 0.090378   10.217 18805.57
+   2 HLA-A*24:02     VVPSLFRVYA VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0001210   24.571 0.056849   18.038 27029.51
+   4 HLA-A*24:02      PSLFRVYAR PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000410   35.500 0.034242   31.375 34519.78
+   3 HLA-A*24:02      VPSLFRVYA VPSLFRVYA  0  0  0  0  0    VPSLFRVYA 2_30143324-C_A_ 0.0000300   39.000 0.027381   39.162 37179.84
+   3 HLA-A*24:02     VPSLFRVYAR VPSLRVYAR  0  4  1  0  0   VPSLFRVYAR 2_30143324-C_A_ 0.0000290   39.500 0.034138   31.474 34558.62
+  11 HLA-A*24:02      ARDLLLPPS ARDLLLPPS  0  0  0  0  0    ARDLLLPPS 2_30143324-C_A_ 0.0000240   42.000 0.019944   52.120 40295.23
+   5 HLA-A*24:02      SLFRVYARD SLFRVYARD  0  0  0  0  0    SLFRVYARD 2_30143324-C_A_ 0.0000180   45.500 0.040393   26.447 32297.17
+  13 HLA-A*24:02      DLLLPPSSS DLLLPPSSS  0  0  0  0  0    DLLLPPSSS 2_30143324-C_A_ 0.0000110   52.500 0.011303   76.574 44244.32
+  12 HLA-A*24:02      RDLLLPPSS RDLLLPPSS  0  0  0  0  0    RDLLLPPSS 2_30143324-C_A_ 0.0000100   53.750 0.017148   58.676 41532.88
+  10 HLA-A*24:02      YARDLLLPP YARDLLLPP  0  0  0  0  0    YARDLLLPP 2_30143324-C_A_ 0.0000070   58.333 0.022299   47.380 39281.47
+  11 HLA-A*24:02     ARDLLLPPSS ARDLLPPSS  0  3  1  0  0   ARDLLLPPSS 2_30143324-C_A_ 0.0000070   58.333 0.015918   61.962 42089.30
+  12 HLA-A*24:02     RDLLLPPSSS RLLLPPSSS  0  1  1  0  0   RDLLLPPSSS 2_30143324-C_A_ 0.0000040   67.500 0.016875   59.350 41655.73
+  10 HLA-A*24:02     YARDLLLPPS YRDLLLPPS  0  1  1  0  0   YARDLLLPPS 2_30143324-C_A_ 0.0000020   80.000 0.026718   40.126 37447.50
+   4 HLA-A*24:02     PSLFRVYARD PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000010   90.000 0.022296   47.386 39282.73
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_30143324-C_A_. Allele HLA-A*24:02. Number of high binders 0. Number of weak binders 0. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+
+HLA-B39:01 : Distance to training data  0.000 (using nearest neighbor HLA-B39:01)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   4 HLA-B*39:01      NHQNIVRCI NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.4800800    0.239 0.440058    0.357   427.71 <= SB
+   1 HLA-B*39:01      SKFNHQNIV SKFNHQNIV  0  0  0  0  0    SKFNHQNIV 2_29443672-C_T_ 0.1140720    1.185 0.282233    1.400  2359.20 <= WB
+   3 HLA-B*39:01     FNHQNIVRCI FHQNIVRCI  0  1  1  0  0   FNHQNIVRCI 2_29443672-C_T_ 0.0084220    5.832 0.218151    2.496  4719.38
+   3 HLA-B*39:01      FNHQNIVRC FNHQNIVRC  0  0  0  0  0    FNHQNIVRC 2_29443672-C_T_ 0.0034820    8.865 0.076398   15.086 21876.51
+   8 HLA-B*39:01      IVRCIGVSL IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0024090   10.510 0.126468    7.009 12726.26
+  10 HLA-B*39:01     RCIGVSLQSL RCIGVSQSL  0  6  1  0  0   RCIGVSLQSL 2_29443672-C_T_ 0.0013440   13.564 0.079848   14.184 21074.96
+   5 HLA-B*39:01     HQNIVRCIGV HQNIVRIGV  0  6  1  0  0   HQNIVRCIGV 2_29443672-C_T_ 0.0007710   16.929 0.146160    5.470 10284.15
+   7 HLA-B*39:01     NIVRCIGVSL NIVRIGVSL  0  4  1  0  0   NIVRCIGVSL 2_29443672-C_T_ 0.0007180   17.407 0.126505    7.006 12721.16
+   4 HLA-B*39:01     NHQNIVRCIG NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0006960   17.611 0.137468    6.067 11298.27
+   6 HLA-B*39:01      QNIVRCIGV QNIVRCIGV  0  0  0  0  0    QNIVRCIGV 2_29443672-C_T_ 0.0005480   19.274 0.077658   14.751 21580.30
+  11 HLA-B*39:01      CIGVSLQSL CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0003770   22.114 0.068680   17.445 23781.80
+   1 HLA-B*39:01     SKFNHQNIVR SKFNHQIVR  0  6  1  0  0   SKFNHQNIVR 2_29443672-C_T_ 0.0001760   29.000 0.044788   29.453 30797.29
+   5 HLA-B*39:01      HQNIVRCIG HQNIVRCIG  0  0  0  0  0    HQNIVRCIG 2_29443672-C_T_ 0.0001000   35.000 0.105372    9.428 15989.32
+   9 HLA-B*39:01      VRCIGVSLQ VRCIGVSLQ  0  0  0  0  0    VRCIGVSLQ 2_29443672-C_T_ 0.0000810   37.333 0.026918   48.510 37366.56
+   9 HLA-B*39:01     VRCIGVSLQS VRIGVSLQS  0  2  1  0  0   VRCIGVSLQS 2_29443672-C_T_ 0.0000810   37.333 0.037326   35.666 33386.92
+  13 HLA-B*39:01      GVSLQSLPR GVSLQSLPR  0  0  0  0  0    GVSLQSLPR 2_29443672-C_T_ 0.0000750   38.286 0.022627   55.966 39142.31
+  10 HLA-B*39:01      RCIGVSLQS RCIGVSLQS  0  0  0  0  0    RCIGVSLQS 2_29443672-C_T_ 0.0000520   42.750 0.023267   54.744 38872.18
+   2 HLA-B*39:01      KFNHQNIVR KFNHQNIVR  0  0  0  0  0    KFNHQNIVR 2_29443672-C_T_ 0.0000360   47.667 0.014411   75.023 42781.23
+   2 HLA-B*39:01     KFNHQNIVRC KFNHQNIVC  0  8  1  0  0   KFNHQNIVRC 2_29443672-C_T_ 0.0000360   47.667 0.019920   61.450 40305.71
+  12 HLA-B*39:01      IGVSLQSLP IGVSLQSLP  0  0  0  0  0    IGVSLQSLP 2_29443672-C_T_ 0.0000260   52.222 0.019500   62.391 40489.28
+  12 HLA-B*39:01     IGVSLQSLPR IGVSLQSLR  0  8  1  0  0   IGVSLQSLPR 2_29443672-C_T_ 0.0000050   75.000 0.018662   64.269 40858.08
+   8 HLA-B*39:01     IVRCIGVSLQ IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0000050   75.000 0.024434   52.714 38384.46
+   7 HLA-B*39:01      NIVRCIGVS NIVRCIGVS  0  0  0  0  0    NIVRCIGVS 2_29443672-C_T_ 0.0000030   80.000 0.033593   39.588 34763.02
+  11 HLA-B*39:01     CIGVSLQSLP CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0000020   85.000 0.017400   67.297 41419.78
+   6 HLA-B*39:01     QNIVRCIGVS QNIVRIGVS  0  5  1  0  0   QNIVRCIGVS 2_29443672-C_T_ 0.0000020   85.000 0.027352   47.812 37191.52
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_29443672-C_T_. Allele HLA-B*39:01. Number of high binders 1. Number of weak binders 1. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   7 HLA-B*39:01      FRVYARDLL FRVYARDLL  0  0  0  0  0    FRVYARDLL 2_30143324-C_A_ 0.4135470    0.297 0.616144    0.051    63.64 <= SB
+   7 HLA-B*39:01     FRVYARDLLL FRYARDLLL  0  2  1  0  0   FRVYARDLLL 2_30143324-C_A_ 0.0745880    1.600 0.445735    0.339   402.23 <= WB
+   8 HLA-B*39:01      RVYARDLLL RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0192240    3.717 0.192818    3.207  6207.60
+   1 HLA-B*39:01      FVVPSLFRV FVVPSLFRV  0  0  0  0  0    FVVPSLFRV 2_30143324-C_A_ 0.0041620    8.162 0.140757    5.834 10903.28
+   3 HLA-B*39:01      VPSLFRVYA VPSLFRVYA  0  0  0  0  0    VPSLFRVYA 2_30143324-C_A_ 0.0040990    8.221 0.143006    5.682 10641.17
+   6 HLA-B*39:01     LFRVYARDLL LRVYARDLL  0  1  1  0  0   LFRVYARDLL 2_30143324-C_A_ 0.0019830   11.488 0.199128    2.996  5797.94
+  11 HLA-B*39:01      ARDLLLPPS ARDLLLPPS  0  0  0  0  0    ARDLLLPPS 2_30143324-C_A_ 0.0016090   12.596 0.116389    8.051 14192.59
+  13 HLA-B*39:01      DLLLPPSSS DLLLPPSSS  0  0  0  0  0    DLLLPPSSS 2_30143324-C_A_ 0.0004370   20.951 0.033392   39.817 34838.70
+  10 HLA-B*39:01      YARDLLLPP YARDLLLPP  0  0  0  0  0    YARDLLLPP 2_30143324-C_A_ 0.0003030   23.946 0.086649   12.666 19579.83
+  11 HLA-B*39:01     ARDLLLPPSS ARDLLPPSS  0  3  1  0  0   ARDLLLPPSS 2_30143324-C_A_ 0.0003030   23.946 0.049520   26.344 29260.18
+   2 HLA-B*39:01      VVPSLFRVY VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0001520   30.467 0.026157   49.740 37675.49
+   5 HLA-B*39:01     SLFRVYARDL SLFRVYARL  0  8  1  0  0   SLFRVYARDL 2_30143324-C_A_ 0.0001450   30.933 0.074454   15.649 22341.53
+   2 HLA-B*39:01     VVPSLFRVYA VPSLFRVYA  0  1  1  0  0   VVPSLFRVYA 2_30143324-C_A_ 0.0001020   34.778 0.056917   22.303 27009.63
+   6 HLA-B*39:01      LFRVYARDL LFRVYARDL  0  0  0  0  0    LFRVYARDL 2_30143324-C_A_ 0.0001000   35.000 0.043692   30.268 31164.68
+   9 HLA-B*39:01      VYARDLLLP VYARDLLLP  0  0  0  0  0    VYARDLLLP 2_30143324-C_A_ 0.0000910   36.000 0.026192   49.684 37661.23
+  10 HLA-B*39:01     YARDLLLPPS YRDLLLPPS  0  1  1  0  0   YARDLLLPPS 2_30143324-C_A_ 0.0000820   37.167 0.107127    9.184 15688.57
+   1 HLA-B*39:01     FVVPSLFRVY FVVPLFRVY  0  4  1  0  0   FVVPSLFRVY 2_30143324-C_A_ 0.0000670   39.600 0.046445   28.288 30250.06
+  12 HLA-B*39:01      RDLLLPPSS RDLLLPPSS  0  0  0  0  0    RDLLLPPSS 2_30143324-C_A_ 0.0000460   44.333 0.021207   58.747 39748.35
+   3 HLA-B*39:01     VPSLFRVYAR VPSLFRVAR  0  7  1  0  0   VPSLFRVYAR 2_30143324-C_A_ 0.0000370   47.333 0.043604   30.338 31194.36
+   8 HLA-B*39:01     RVYARDLLLP RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0000330   48.667 0.039824   33.424 32496.62
+   9 HLA-B*39:01     VYARDLLLPP VYADLLLPP  0  3  1  0  0   VYARDLLLPP 2_30143324-C_A_ 0.0000150   60.000 0.036707   36.272 33611.27
+   4 HLA-B*39:01      PSLFRVYAR PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000090   66.667 0.016987   68.311 41605.28
+  12 HLA-B*39:01     RDLLLPPSSS RLLLPPSSS  0  1  1  0  0   RDLLLPPSSS 2_30143324-C_A_ 0.0000080   68.333 0.017132   67.955 41540.08
+   5 HLA-B*39:01      SLFRVYARD SLFRVYARD  0  0  0  0  0    SLFRVYARD 2_30143324-C_A_ 0.0000020   85.000 0.020926   59.297 39869.37
+   4 HLA-B*39:01     PSLFRVYARD PSLFRVYAD  0  8  1  0  0   PSLFRVYARD 2_30143324-C_A_ 0.0000000  100.000 0.009297   89.583 45215.11
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_30143324-C_A_. Allele HLA-B*39:01. Number of high binders 1. Number of weak binders 1. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+
+HLA-B39:01 : Distance to training data  0.000 (using nearest neighbor HLA-B39:01)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   4 HLA-B*39:01      NHQNIVRCI NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.4800800    0.239 0.440058    0.357   427.71 <= SB
+   1 HLA-B*39:01      SKFNHQNIV SKFNHQNIV  0  0  0  0  0    SKFNHQNIV 2_29443672-C_T_ 0.1140720    1.185 0.282233    1.400  2359.20 <= WB
+   3 HLA-B*39:01     FNHQNIVRCI FHQNIVRCI  0  1  1  0  0   FNHQNIVRCI 2_29443672-C_T_ 0.0084220    5.832 0.218151    2.496  4719.38
+   3 HLA-B*39:01      FNHQNIVRC FNHQNIVRC  0  0  0  0  0    FNHQNIVRC 2_29443672-C_T_ 0.0034820    8.865 0.076398   15.086 21876.51
+   8 HLA-B*39:01      IVRCIGVSL IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0024090   10.510 0.126468    7.009 12726.26
+  10 HLA-B*39:01     RCIGVSLQSL RCIGVSQSL  0  6  1  0  0   RCIGVSLQSL 2_29443672-C_T_ 0.0013440   13.564 0.079848   14.184 21074.96
+   5 HLA-B*39:01     HQNIVRCIGV HQNIVRIGV  0  6  1  0  0   HQNIVRCIGV 2_29443672-C_T_ 0.0007710   16.929 0.146160    5.470 10284.15
+   7 HLA-B*39:01     NIVRCIGVSL NIVRIGVSL  0  4  1  0  0   NIVRCIGVSL 2_29443672-C_T_ 0.0007180   17.407 0.126505    7.006 12721.16
+   4 HLA-B*39:01     NHQNIVRCIG NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0006960   17.611 0.137468    6.067 11298.27
+   6 HLA-B*39:01      QNIVRCIGV QNIVRCIGV  0  0  0  0  0    QNIVRCIGV 2_29443672-C_T_ 0.0005480   19.274 0.077658   14.751 21580.30
+  11 HLA-B*39:01      CIGVSLQSL CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0003770   22.114 0.068680   17.445 23781.80
+   1 HLA-B*39:01     SKFNHQNIVR SKFNHQIVR  0  6  1  0  0   SKFNHQNIVR 2_29443672-C_T_ 0.0001760   29.000 0.044788   29.453 30797.29
+   5 HLA-B*39:01      HQNIVRCIG HQNIVRCIG  0  0  0  0  0    HQNIVRCIG 2_29443672-C_T_ 0.0001000   35.000 0.105372    9.428 15989.32
+   9 HLA-B*39:01      VRCIGVSLQ VRCIGVSLQ  0  0  0  0  0    VRCIGVSLQ 2_29443672-C_T_ 0.0000810   37.333 0.026918   48.510 37366.56
+   9 HLA-B*39:01     VRCIGVSLQS VRIGVSLQS  0  2  1  0  0   VRCIGVSLQS 2_29443672-C_T_ 0.0000810   37.333 0.037326   35.666 33386.92
+  13 HLA-B*39:01      GVSLQSLPR GVSLQSLPR  0  0  0  0  0    GVSLQSLPR 2_29443672-C_T_ 0.0000750   38.286 0.022627   55.966 39142.31
+  10 HLA-B*39:01      RCIGVSLQS RCIGVSLQS  0  0  0  0  0    RCIGVSLQS 2_29443672-C_T_ 0.0000520   42.750 0.023267   54.744 38872.18
+   2 HLA-B*39:01      KFNHQNIVR KFNHQNIVR  0  0  0  0  0    KFNHQNIVR 2_29443672-C_T_ 0.0000360   47.667 0.014411   75.023 42781.23
+   2 HLA-B*39:01     KFNHQNIVRC KFNHQNIVC  0  8  1  0  0   KFNHQNIVRC 2_29443672-C_T_ 0.0000360   47.667 0.019920   61.450 40305.71
+  12 HLA-B*39:01      IGVSLQSLP IGVSLQSLP  0  0  0  0  0    IGVSLQSLP 2_29443672-C_T_ 0.0000260   52.222 0.019500   62.391 40489.28
+  12 HLA-B*39:01     IGVSLQSLPR IGVSLQSLR  0  8  1  0  0   IGVSLQSLPR 2_29443672-C_T_ 0.0000050   75.000 0.018662   64.269 40858.08
+   8 HLA-B*39:01     IVRCIGVSLQ IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0000050   75.000 0.024434   52.714 38384.46
+   7 HLA-B*39:01      NIVRCIGVS NIVRCIGVS  0  0  0  0  0    NIVRCIGVS 2_29443672-C_T_ 0.0000030   80.000 0.033593   39.588 34763.02
+  11 HLA-B*39:01     CIGVSLQSLP CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0000020   85.000 0.017400   67.297 41419.78
+   6 HLA-B*39:01     QNIVRCIGVS QNIVRIGVS  0  5  1  0  0   QNIVRCIGVS 2_29443672-C_T_ 0.0000020   85.000 0.027352   47.812 37191.52
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_29443672-C_T_. Allele HLA-B*39:01. Number of high binders 1. Number of weak binders 1. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   7 HLA-B*39:01      FRVYARDLL FRVYARDLL  0  0  0  0  0    FRVYARDLL 2_30143324-C_A_ 0.4135470    0.297 0.616144    0.051    63.64 <= SB
+   7 HLA-B*39:01     FRVYARDLLL FRYARDLLL  0  2  1  0  0   FRVYARDLLL 2_30143324-C_A_ 0.0745880    1.600 0.445735    0.339   402.23 <= WB
+   8 HLA-B*39:01      RVYARDLLL RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0192240    3.717 0.192818    3.207  6207.60
+   1 HLA-B*39:01      FVVPSLFRV FVVPSLFRV  0  0  0  0  0    FVVPSLFRV 2_30143324-C_A_ 0.0041620    8.162 0.140757    5.834 10903.28
+   3 HLA-B*39:01      VPSLFRVYA VPSLFRVYA  0  0  0  0  0    VPSLFRVYA 2_30143324-C_A_ 0.0040990    8.221 0.143006    5.682 10641.17
+   6 HLA-B*39:01     LFRVYARDLL LRVYARDLL  0  1  1  0  0   LFRVYARDLL 2_30143324-C_A_ 0.0019830   11.488 0.199128    2.996  5797.94
+  11 HLA-B*39:01      ARDLLLPPS ARDLLLPPS  0  0  0  0  0    ARDLLLPPS 2_30143324-C_A_ 0.0016090   12.596 0.116389    8.051 14192.59
+  13 HLA-B*39:01      DLLLPPSSS DLLLPPSSS  0  0  0  0  0    DLLLPPSSS 2_30143324-C_A_ 0.0004370   20.951 0.033392   39.817 34838.70
+  10 HLA-B*39:01      YARDLLLPP YARDLLLPP  0  0  0  0  0    YARDLLLPP 2_30143324-C_A_ 0.0003030   23.946 0.086649   12.666 19579.83
+  11 HLA-B*39:01     ARDLLLPPSS ARDLLPPSS  0  3  1  0  0   ARDLLLPPSS 2_30143324-C_A_ 0.0003030   23.946 0.049520   26.344 29260.18
+   2 HLA-B*39:01      VVPSLFRVY VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0001520   30.467 0.026157   49.740 37675.49
+   5 HLA-B*39:01     SLFRVYARDL SLFRVYARL  0  8  1  0  0   SLFRVYARDL 2_30143324-C_A_ 0.0001450   30.933 0.074454   15.649 22341.53
+   2 HLA-B*39:01     VVPSLFRVYA VPSLFRVYA  0  1  1  0  0   VVPSLFRVYA 2_30143324-C_A_ 0.0001020   34.778 0.056917   22.303 27009.63
+   6 HLA-B*39:01      LFRVYARDL LFRVYARDL  0  0  0  0  0    LFRVYARDL 2_30143324-C_A_ 0.0001000   35.000 0.043692   30.268 31164.68
+   9 HLA-B*39:01      VYARDLLLP VYARDLLLP  0  0  0  0  0    VYARDLLLP 2_30143324-C_A_ 0.0000910   36.000 0.026192   49.684 37661.23
+  10 HLA-B*39:01     YARDLLLPPS YRDLLLPPS  0  1  1  0  0   YARDLLLPPS 2_30143324-C_A_ 0.0000820   37.167 0.107127    9.184 15688.57
+   1 HLA-B*39:01     FVVPSLFRVY FVVPLFRVY  0  4  1  0  0   FVVPSLFRVY 2_30143324-C_A_ 0.0000670   39.600 0.046445   28.288 30250.06
+  12 HLA-B*39:01      RDLLLPPSS RDLLLPPSS  0  0  0  0  0    RDLLLPPSS 2_30143324-C_A_ 0.0000460   44.333 0.021207   58.747 39748.35
+   3 HLA-B*39:01     VPSLFRVYAR VPSLFRVAR  0  7  1  0  0   VPSLFRVYAR 2_30143324-C_A_ 0.0000370   47.333 0.043604   30.338 31194.36
+   8 HLA-B*39:01     RVYARDLLLP RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0000330   48.667 0.039824   33.424 32496.62
+   9 HLA-B*39:01     VYARDLLLPP VYADLLLPP  0  3  1  0  0   VYARDLLLPP 2_30143324-C_A_ 0.0000150   60.000 0.036707   36.272 33611.27
+   4 HLA-B*39:01      PSLFRVYAR PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000090   66.667 0.016987   68.311 41605.28
+  12 HLA-B*39:01     RDLLLPPSSS RLLLPPSSS  0  1  1  0  0   RDLLLPPSSS 2_30143324-C_A_ 0.0000080   68.333 0.017132   67.955 41540.08
+   5 HLA-B*39:01      SLFRVYARD SLFRVYARD  0  0  0  0  0    SLFRVYARD 2_30143324-C_A_ 0.0000020   85.000 0.020926   59.297 39869.37
+   4 HLA-B*39:01     PSLFRVYARD PSLFRVYAD  0  8  1  0  0   PSLFRVYARD 2_30143324-C_A_ 0.0000000  100.000 0.009297   89.583 45215.11
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_30143324-C_A_. Allele HLA-B*39:01. Number of high binders 1. Number of weak binders 1. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+
+HLA-C07:01 : Distance to training data  0.000 (using nearest neighbor HLA-C07:01)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1 HLA-C*07:01      SKFNHQNIV SKFNHQNIV  0  0  0  0  0    SKFNHQNIV 2_29443672-C_T_ 0.0181840    1.422 0.281472    0.817  2378.71 <= WB
+   4 HLA-C*07:01      NHQNIVRCI NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0088900    2.293 0.219871    1.751  4632.37
+   8 HLA-C*07:01      IVRCIGVSL IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0007360    9.303 0.142006    5.084 10756.93
+   2 HLA-C*07:01      KFNHQNIVR KFNHQNIVR  0  0  0  0  0    KFNHQNIVR 2_29443672-C_T_ 0.0004850   11.494 0.065284   20.691 24671.89
+   1 HLA-C*07:01     SKFNHQNIVR SKFNHQIVR  0  6  1  0  0   SKFNHQNIVR 2_29443672-C_T_ 0.0003630   13.218 0.084742   13.662 19988.02
+   3 HLA-C*07:01     FNHQNIVRCI FHQNIVRCI  0  1  1  0  0   FNHQNIVRCI 2_29443672-C_T_ 0.0003580   13.309 0.145395    4.843 10369.63
+   9 HLA-C*07:01      VRCIGVSLQ VRCIGVSLQ  0  0  0  0  0    VRCIGVSLQ 2_29443672-C_T_ 0.0003460   13.527 0.087585   12.915 19382.55
+   3 HLA-C*07:01      FNHQNIVRC FNHQNIVRC  0  0  0  0  0    FNHQNIVRC 2_29443672-C_T_ 0.0002010   17.200 0.066147   20.302 24442.60
+  10 HLA-C*07:01     RCIGVSLQSL RCIGVSLQL  0  8  1  0  0   RCIGVSLQSL 2_29443672-C_T_ 0.0001810   18.000 0.064057   21.259 25001.62
+   9 HLA-C*07:01     VRCIGVSLQS VRIGVSLQS  0  2  1  0  0   VRCIGVSLQS 2_29443672-C_T_ 0.0001570   19.105 0.070478   18.462 23323.62
+   6 HLA-C*07:01      QNIVRCIGV QNIVRCIGV  0  0  0  0  0    QNIVRCIGV 2_29443672-C_T_ 0.0000710   26.286 0.061610   22.443 25672.40
+  11 HLA-C*07:01      CIGVSLQSL CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0000570   28.600 0.075672   16.529 22049.03
+  13 HLA-C*07:01      GVSLQSLPR GVSLQSLPR  0  0  0  0  0    GVSLQSLPR 2_29443672-C_T_ 0.0000450   31.000 0.040726   37.697 32181.01
+   2 HLA-C*07:01     KFNHQNIVRC KFHQNIVRC  0  2  1  0  0   KFNHQNIVRC 2_29443672-C_T_ 0.0000340   34.333 0.032926   46.642 35014.80
+   7 HLA-C*07:01     NIVRCIGVSL NVRCIGVSL  0  1  1  0  0   NIVRCIGVSL 2_29443672-C_T_ 0.0000270   37.000 0.075777   16.493 22024.00
+  10 HLA-C*07:01      RCIGVSLQS RCIGVSLQS  0  0  0  0  0    RCIGVSLQS 2_29443672-C_T_ 0.0000250   38.000 0.031154   49.114 35692.62
+   5 HLA-C*07:01     HQNIVRCIGV HQNIVRCIV  0  8  1  0  0   HQNIVRCIGV 2_29443672-C_T_ 0.0000200   40.500 0.076301   16.312 21899.49
+   8 HLA-C*07:01     IVRCIGVSLQ IRCIGVSLQ  0  1  1  0  0   IVRCIGVSLQ 2_29443672-C_T_ 0.0000160   43.500 0.052537   27.838 28320.45
+   4 HLA-C*07:01     NHQNIVRCIG NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0000130   46.000 0.053867   26.935 27915.84
+  12 HLA-C*07:01     IGVSLQSLPR IGVSLQSLR  0  8  1  0  0   IGVSLQSLPR 2_29443672-C_T_ 0.0000100   50.000 0.039860   38.599 32483.96
+  12 HLA-C*07:01      IGVSLQSLP IGVSLQSLP  0  0  0  0  0    IGVSLQSLP 2_29443672-C_T_ 0.0000090   51.667 0.027870   54.145 36983.64
+   5 HLA-C*07:01      HQNIVRCIG HQNIVRCIG  0  0  0  0  0    HQNIVRCIG 2_29443672-C_T_ 0.0000080   53.333 0.057258   24.835 26910.16
+   7 HLA-C*07:01      NIVRCIGVS NIVRCIGVS  0  0  0  0  0    NIVRCIGVS 2_29443672-C_T_ 0.0000000  100.000 0.024232   60.311 38468.43
+  11 HLA-C*07:01     CIGVSLQSLP CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0000000  100.000 0.018981   71.076 40717.30
+   6 HLA-C*07:01     QNIVRCIGVS QNIVRIGVS  0  5  1  0  0   QNIVRCIGVS 2_29443672-C_T_ 0.0000000  100.000 0.020113   68.648 40221.63
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_29443672-C_T_. Allele HLA-C*07:01. Number of high binders 0. Number of weak binders 1. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   7 HLA-C*07:01      FRVYARDLL FRVYARDLL  0  0  0  0  0    FRVYARDLL 2_30143324-C_A_ 0.1003790    0.315 0.506005    0.072   209.54 <= SB
+   7 HLA-C*07:01     FRVYARDLLL FRYARDLLL  0  2  1  0  0   FRVYARDLLL 2_30143324-C_A_ 0.0623720    0.520 0.525763    0.056   169.21 <= WB
+   2 HLA-C*07:01      VVPSLFRVY VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0509390    0.626 0.294250    0.700  2071.56 <= WB
+   8 HLA-C*07:01      RVYARDLLL RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0504220    0.632 0.400465    0.207   656.44 <= WB
+   1 HLA-C*07:01      FVVPSLFRV FVVPSLFRV  0  0  0  0  0    FVVPSLFRV 2_30143324-C_A_ 0.0178580    1.439 0.272771    0.895  2613.53 <= WB
+   1 HLA-C*07:01     FVVPSLFRVY FVVPSFRVY  0  5  1  0  0   FVVPSLFRVY 2_30143324-C_A_ 0.0089200    2.288 0.252961    1.154  3238.27
+   6 HLA-C*07:01      LFRVYARDL LFRVYARDL  0  0  0  0  0    LFRVYARDL 2_30143324-C_A_ 0.0009110    8.344 0.181500    2.898  7016.28
+   3 HLA-C*07:01      VPSLFRVYA VPSLFRVYA  0  0  0  0  0    VPSLFRVYA 2_30143324-C_A_ 0.0005500   10.787 0.088069   12.798 19281.30
+   6 HLA-C*07:01     LFRVYARDLL LRVYARDLL  0  1  1  0  0   LFRVYARDLL 2_30143324-C_A_ 0.0003670   13.145 0.179573    2.971  7164.10
+  10 HLA-C*07:01      YARDLLLPP YARDLLLPP  0  0  0  0  0    YARDLLLPP 2_30143324-C_A_ 0.0001480   19.579 0.075810   16.482 22016.13
+   9 HLA-C*07:01      VYARDLLLP VYARDLLLP  0  0  0  0  0    VYARDLLLP 2_30143324-C_A_ 0.0001240   21.077 0.046987   31.964 30073.19
+   2 HLA-C*07:01     VVPSLFRVYA VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0000790   25.250 0.095463   11.121 17798.87
+   4 HLA-C*07:01      PSLFRVYAR PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000680   26.714 0.046654   32.244 30181.74
+  11 HLA-C*07:01      ARDLLLPPS ARDLLLPPS  0  0  0  0  0    ARDLLLPPS 2_30143324-C_A_ 0.0000670   26.857 0.060532   22.975 25973.60
+   8 HLA-C*07:01     RVYARDLLLP RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0000670   26.857 0.082607   14.261 20455.12
+   3 HLA-C*07:01     VPSLFRVYAR VPSLFRVYR  0  8  1  0  0   VPSLFRVYAR 2_30143324-C_A_ 0.0000570   28.600 0.058696   23.984 26494.71
+   5 HLA-C*07:01     SLFRVYARDL SFRVYARDL  0  1  1  0  0   SLFRVYARDL 2_30143324-C_A_ 0.0000550   29.000 0.098832   10.443 17161.74
+  11 HLA-C*07:01     ARDLLLPPSS ARDLLPPSS  0  3  1  0  0   ARDLLLPPSS 2_30143324-C_A_ 0.0000230   39.000 0.039995   38.455 32436.55
+   9 HLA-C*07:01     VYARDLLLPP VYADLLLPP  0  3  1  0  0   VYARDLLLPP 2_30143324-C_A_ 0.0000160   43.500 0.043438   35.099 31250.44
+  10 HLA-C*07:01     YARDLLLPPS YRDLLLPPS  0  1  1  0  0   YARDLLLPPS 2_30143324-C_A_ 0.0000080   53.333 0.060377   23.058 26017.18
+  13 HLA-C*07:01      DLLLPPSSS DLLLPPSSS  0  0  0  0  0    DLLLPPSSS 2_30143324-C_A_ 0.0000050   60.000 0.016782   75.972 41697.69
+  12 HLA-C*07:01      RDLLLPPSS RDLLLPPSS  0  0  0  0  0    RDLLLPPSS 2_30143324-C_A_ 0.0000040   62.500 0.012832   85.241 43518.40
+  12 HLA-C*07:01     RDLLLPPSSS RLLLPPSSS  0  1  1  0  0   RDLLLPPSSS 2_30143324-C_A_ 0.0000020   75.000 0.017261   74.855 41482.12
+   5 HLA-C*07:01      SLFRVYARD SLFRVYARD  0  0  0  0  0    SLFRVYARD 2_30143324-C_A_ 0.0000010   85.000 0.020444   67.952 40077.85
+   4 HLA-C*07:01     PSLFRVYARD PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000000  100.000 0.013351   84.026 43274.69
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_30143324-C_A_. Allele HLA-C*07:01. Number of high binders 1. Number of weak binders 4. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+
+HLA-C06:02 : Distance to training data  0.000 (using nearest neighbor HLA-C06:02)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1 HLA-C*06:02      SKFNHQNIV SKFNHQNIV  0  0  0  0  0    SKFNHQNIV 2_29443672-C_T_ 0.2515400    0.292 0.415299    0.197   559.10 <= SB
+   4 HLA-C*06:02      NHQNIVRCI NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0570420    1.282 0.238856    1.250  3772.18 <= WB
+   3 HLA-C*06:02     FNHQNIVRCI FHQNIVRCI  0  1  1  0  0   FNHQNIVRCI 2_29443672-C_T_ 0.0032940    7.338 0.206694    1.819  5342.21
+   3 HLA-C*06:02      FNHQNIVRC FNHQNIVRC  0  0  0  0  0    FNHQNIVRC 2_29443672-C_T_ 0.0029750    7.713 0.084196   10.977 20106.46
+   8 HLA-C*06:02      IVRCIGVSL IVRCIGVSL  0  0  0  0  0    IVRCIGVSL 2_29443672-C_T_ 0.0017350    9.864 0.109607    6.893 15273.20
+   9 HLA-C*06:02      VRCIGVSLQ VRCIGVSLQ  0  0  0  0  0    VRCIGVSLQ 2_29443672-C_T_ 0.0007970   13.901 0.065529   16.244 24606.58
+   6 HLA-C*06:02      QNIVRCIGV QNIVRCIGV  0  0  0  0  0    QNIVRCIGV 2_29443672-C_T_ 0.0004720   17.210 0.076949   12.710 21746.48
+   1 HLA-C*06:02     SKFNHQNIVR SKFNHQIVR  0  6  1  0  0   SKFNHQNIVR 2_29443672-C_T_ 0.0004420   17.694 0.073406   13.671 22596.31
+   9 HLA-C*06:02     VRCIGVSLQS VRIGVSLQS  0  2  1  0  0   VRCIGVSLQS 2_29443672-C_T_ 0.0003040   20.605 0.064214   16.725 24959.18
+  10 HLA-C*06:02     RCIGVSLQSL RCIGVSLQL  0  8  1  0  0   RCIGVSLQSL 2_29443672-C_T_ 0.0002730   21.471 0.046701   25.686 30166.39
+   2 HLA-C*06:02      KFNHQNIVR KFNHQNIVR  0  0  0  0  0    KFNHQNIVR 2_29443672-C_T_ 0.0002510   22.138 0.030508   41.127 35942.96
+  11 HLA-C*06:02      CIGVSLQSL CIGVSLQSL  0  0  0  0  0    CIGVSLQSL 2_29443672-C_T_ 0.0002290   22.897 0.064510   16.617 24879.38
+   5 HLA-C*06:02     HQNIVRCIGV HQNIVRIGV  0  6  1  0  0   HQNIVRCIGV 2_29443672-C_T_ 0.0001170   29.000 0.087664   10.263 19365.98
+   7 HLA-C*06:02     NIVRCIGVSL NVRCIGVSL  0  1  1  0  0   NIVRCIGVSL 2_29443672-C_T_ 0.0000370   41.667 0.056441   20.098 27149.10
+   8 HLA-C*06:02     IVRCIGVSLQ IRCIGVSLQ  0  1  1  0  0   IVRCIGVSLQ 2_29443672-C_T_ 0.0000300   44.000 0.036689   33.993 33617.82
+   2 HLA-C*06:02     KFNHQNIVRC KFHQNIVRC  0  2  1  0  0   KFNHQNIVRC 2_29443672-C_T_ 0.0000290   44.500 0.026060   47.520 37715.07
+   5 HLA-C*06:02      HQNIVRCIG HQNIVRCIG  0  0  0  0  0    HQNIVRCIG 2_29443672-C_T_ 0.0000260   46.000 0.046439   25.865 30252.03
+  10 HLA-C*06:02      RCIGVSLQS RCIGVSLQS  0  0  0  0  0    RCIGVSLQS 2_29443672-C_T_ 0.0000250   46.500 0.018920   61.279 40744.17
+   4 HLA-C*06:02     NHQNIVRCIG NHQNIVRCI  0  0  0  0  0    NHQNIVRCI 2_29443672-C_T_ 0.0000220   48.000 0.047190   25.352 30007.21
+  12 HLA-C*06:02      IGVSLQSLP IGVSLQSLP  0  0  0  0  0    IGVSLQSLP 2_29443672-C_T_ 0.0000200   49.000 0.026712   46.520 37449.94
+  13 HLA-C*06:02      GVSLQSLPR GVSLQSLPR  0  0  0  0  0    GVSLQSLPR 2_29443672-C_T_ 0.0000130   55.000 0.015476   69.720 42291.08
+  12 HLA-C*06:02     IGVSLQSLPR IGVSLQSLR  0  8  1  0  0   IGVSLQSLPR 2_29443672-C_T_ 0.0000100   58.750 0.026506   46.820 37533.50
+  11 HLA-C*06:02     CIGVSLQSLP CGVSLQSLP  0  1  1  0  0   CIGVSLQSLP 2_29443672-C_T_ 0.0000020   80.000 0.017378   64.847 41429.67
+   7 HLA-C*06:02      NIVRCIGVS NIVRCIGVS  0  0  0  0  0    NIVRCIGVS 2_29443672-C_T_ 0.0000010   90.000 0.018776   61.613 40807.70
+   6 HLA-C*06:02     QNIVRCIGVS QNIVRIGVS  0  5  1  0  0   QNIVRCIGVS 2_29443672-C_T_ 0.0000010   90.000 0.018427   62.420 40962.08
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_29443672-C_T_. Allele HLA-C*06:02. Number of high binders 1. Number of weak binders 1. Number of peptides 25
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   7 HLA-C*06:02      FRVYARDLL FRVYARDLL  0  0  0  0  0    FRVYARDLL 2_30143324-C_A_ 0.2720390    0.267 0.529991    0.070   161.64 <= SB
+   7 HLA-C*06:02     FRVYARDLLL FRYARDLLL  0  2  1  0  0   FRVYARDLLL 2_30143324-C_A_ 0.2251870    0.338 0.580456    0.039    93.63 <= SB
+   1 HLA-C*06:02      FVVPSLFRV FVVPSLFRV  0  0  0  0  0    FVVPSLFRV 2_30143324-C_A_ 0.1328010    0.614 0.314346    0.533  1666.74 <= WB
+   2 HLA-C*06:02      VVPSLFRVY VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.1243660    0.659 0.232879    1.340  4024.19 <= WB
+   8 HLA-C*06:02      RVYARDLLL RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0970950    0.828 0.349005    0.380  1145.53 <= WB
+   1 HLA-C*06:02     FVVPSLFRVY FVVPSFRVY  0  5  1  0  0   FVVPSLFRVY 2_30143324-C_A_ 0.0109050    3.807 0.171127    2.901  7849.63
+   6 HLA-C*06:02      LFRVYARDL LFRVYARDL  0  0  0  0  0    LFRVYARDL 2_30143324-C_A_ 0.0040860    6.541 0.190163    2.274  6388.51
+   6 HLA-C*06:02     LFRVYARDLL LRVYARDLL  0  1  1  0  0   LFRVYARDLL 2_30143324-C_A_ 0.0015130   10.531 0.190341    2.269  6376.22
+   3 HLA-C*06:02      VPSLFRVYA VPSLFRVYA  0  0  0  0  0    VPSLFRVYA 2_30143324-C_A_ 0.0005780   15.891 0.056846   19.905 27030.39
+  10 HLA-C*06:02      YARDLLLPP YARDLLLPP  0  0  0  0  0    YARDLLLPP 2_30143324-C_A_ 0.0003770   18.885 0.065972   16.082 24488.92
+   2 HLA-C*06:02     VVPSLFRVYA VVPSLFRVY  0  0  0  0  0    VVPSLFRVY 2_30143324-C_A_ 0.0003680   19.068 0.098685    8.371 17189.06
+   5 HLA-C*06:02     SLFRVYARDL SLFRYARDL  0  4  1  0  0   SLFRVYARDL 2_30143324-C_A_ 0.0002490   22.207 0.112426    6.588 14814.39
+   9 HLA-C*06:02      VYARDLLLP VYARDLLLP  0  0  0  0  0    VYARDLLLP 2_30143324-C_A_ 0.0001960   24.273 0.035962   34.729 33883.30
+  11 HLA-C*06:02      ARDLLLPPS ARDLLLPPS  0  0  0  0  0    ARDLLLPPS 2_30143324-C_A_ 0.0001090   29.727 0.041237   29.874 32003.58
+   8 HLA-C*06:02     RVYARDLLLP RVYARDLLL  0  0  0  0  0    RVYARDLLL 2_30143324-C_A_ 0.0000950   31.111 0.067201   15.645 24165.43
+   4 HLA-C*06:02      PSLFRVYAR PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000330   43.000 0.024530   50.097 38344.61
+  11 HLA-C*06:02     ARDLLLPPSS ARLLLPPSS  0  2  1  0  0   ARDLLLPPSS 2_30143324-C_A_ 0.0000300   44.000 0.028533   43.834 36719.30
+   3 HLA-C*06:02     VPSLFRVYAR VPSLFRVYR  0  8  1  0  0   VPSLFRVYAR 2_30143324-C_A_ 0.0000220   48.000 0.031835   39.426 35430.57
+  10 HLA-C*06:02     YARDLLLPPS YRDLLLPPS  0  1  1  0  0   YARDLLLPPS 2_30143324-C_A_ 0.0000180   50.833 0.047547   25.108 29891.53
+   9 HLA-C*06:02     VYARDLLLPP VYRDLLLPP  0  2  1  0  0   VYARDLLLPP 2_30143324-C_A_ 0.0000150   53.333 0.033384   37.558 34841.71
+  13 HLA-C*06:02      DLLLPPSSS DLLLPPSSS  0  0  0  0  0    DLLLPPSSS 2_30143324-C_A_ 0.0000090   60.000 0.011824   80.043 43995.61
+  12 HLA-C*06:02      RDLLLPPSS RDLLLPPSS  0  0  0  0  0    RDLLLPPSS 2_30143324-C_A_ 0.0000070   63.333 0.011018   82.508 44380.98
+   5 HLA-C*06:02      SLFRVYARD SLFRVYARD  0  0  0  0  0    SLFRVYARD 2_30143324-C_A_ 0.0000030   75.000 0.015200   70.462 42417.55
+  12 HLA-C*06:02     RDLLLPPSSS RLLLPPSSS  0  1  1  0  0   RDLLLPPSSS 2_30143324-C_A_ 0.0000020   80.000 0.011768   80.214 44022.29
+   4 HLA-C*06:02     PSLFRVYARD PSLFRVYAR  0  0  0  0  0    PSLFRVYAR 2_30143324-C_A_ 0.0000000  100.000 0.009228   87.978 45248.89
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein 2_30143324-C_A_. Allele HLA-C*06:02. Number of high binders 2. Number of weak binders 3. Number of peptides 25
+
+-----------------------------------------------------------------------------------
