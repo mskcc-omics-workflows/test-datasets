@@ -1,1 +1,1 @@
-Test datasets for MSK modules or subworkflows added into modules repo
+Downsized reference files for HG37 and downsized chr22
