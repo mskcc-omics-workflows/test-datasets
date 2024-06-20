@@ -2451,7 +2451,8 @@ TLFIGSHVV
 >64810|polyprotein|BAB18806.1|Hepacivirus hominis|3052230
 TLGFGAYMSK
 >64817|Protein E7|P03129.1|Alphapapillomavirus 9|337041
-TLGIVCPI>64818|E7|AAD33253.1|Alphapapillomavirus 9|337041
+TLGIVCP
+64818|E7|AAD33253.1|Alphapapillomavirus 9|337041
 TLGIVCPI
 >64819|E7 protein|ABL96585.1|Alphapapillomavirus 9|337041
 TLGIVCPIC
@@ -5920,34 +5921,50 @@ SFVYVPSAL
 >767757|Large envelope protein|Q76R62.2|Hepatitis B virus|10407
 VGLSPTVWL
 >768391|E7|AAD33253.1|Alphapapillomavirus 9|337041
-DLLMGTLGIV>768403|E7|AAD33253.1|Alphapapillomavirus 9|337041
-EDLLMGTLGIV>768404|E7|AAD33253.1|Alphapapillomavirus 9|337041
+DLLMGTLGIV
+>768403|E7|AAD33253.1|Alphapapillomavirus 9|337041
+EDLLMGTLGIV
+>768404|E7|AAD33253.1|Alphapapillomavirus 9|337041
 EDLLMGTLGIV
 >768426|E7|AAD33253.1|Alphapapillomavirus 9|337041
-EYMLDLQPET>768427|E7|AAD33253.1|Alphapapillomavirus 9|337041
+EYMLDLQPET
+>768427|E7|AAD33253.1|Alphapapillomavirus 9|337041
 EYMLDLQPET
 >768483|E7|AAD33253.1|Alphapapillomavirus 9|337041
-IRTLEDLLMGT>768525|E7|AAD33253.1|Alphapapillomavirus 9|337041
-LLMGTLGIV>768545|E7|AAD33253.1|Alphapapillomavirus 9|337041
-MLDLQPET>768546|E7|AAD33253.1|Alphapapillomavirus 9|337041
+IRTLEDLLMGT
+>768525|E7|AAD33253.1|Alphapapillomavirus 9|337041
+LLMGTLGIV
+>768545|E7|AAD33253.1|Alphapapillomavirus 9|337041
+MLDLQPET
+>768546|E7|AAD33253.1|Alphapapillomavirus 9|337041
 MLDLQPET
 >768547|E7|AAD33253.1|Alphapapillomavirus 9|337041
-MLDLQPETT>768626|E7|AAD33253.1|Alphapapillomavirus 9|337041
-RTLEDLLMGT>768627|E7|AAD33253.1|Alphapapillomavirus 9|337041
-RTLEDLLMGTL>768628|E7|AAD33253.1|Alphapapillomavirus 9|337041
+MLDLQPETT
+>768626|E7|AAD33253.1|Alphapapillomavirus 9|337041
+RTLEDLLMGT
+>768627|E7|AAD33253.1|Alphapapillomavirus 9|337041
+RTLEDLLMGTL
+>768628|E7|AAD33253.1|Alphapapillomavirus 9|337041
 RTLEDLLMGTL
 >768665|E7|AAD33253.1|Alphapapillomavirus 9|337041
-TLEDLLMGT>768666|E7|AAD33253.1|Alphapapillomavirus 9|337041
-TLHEYMLDL>768667|E7|AAD33253.1|Alphapapillomavirus 9|337041
-TLHEYMLDLQP>768668|E7|AAD33253.1|Alphapapillomavirus 9|337041
+TLEDLLMGT
+>768666|E7|AAD33253.1|Alphapapillomavirus 9|337041
+TLHEYMLDL
+>768667|E7|AAD33253.1|Alphapapillomavirus 9|337041
+TLHEYMLDLQP
+>768668|E7|AAD33253.1|Alphapapillomavirus 9|337041
 TLHEYMLDLQP
 >768724|E7|AAD33253.1|Alphapapillomavirus 9|337041
-YMLDLQPE>768725|E7|AAD33253.1|Alphapapillomavirus 9|337041
+YMLDLQPE
+>768725|E7|AAD33253.1|Alphapapillomavirus 9|337041
 YMLDLQPE
 >768726|E7|AAD33253.1|Alphapapillomavirus 9|337041
-YMLDLQPET>768727|E7|AAD33253.1|Alphapapillomavirus 9|337041
-YMLDLQPETT>768728|E7|AAD33253.1|Alphapapillomavirus 9|337041
-YMLDLQPETTD>768729|E7|AAD33253.1|Alphapapillomavirus 9|337041
+YMLDLQPET
+>768727|E7|AAD33253.1|Alphapapillomavirus 9|337041
+YMLDLQPETT
+>768728|E7|AAD33253.1|Alphapapillomavirus 9|337041
+YMLDLQPETTD
+>768729|E7|AAD33253.1|Alphapapillomavirus 9|337041
 YMLDLQPETTD
 >779921|polyprotein [Hepatitis C virus subtype 4a]|BAM95359.2|Hepacivirus hominis|3052230
 CLIDYPYRL
@@ -8476,7 +8493,8 @@ RVKEKYQHLW
 >1403183|membrane glycoprotein [Severe acute respiratory syndrome coronavirus 2]|QHD43419.1|Severe acute respiratory syndrome coronavirus 2|2697049
 RLFARTRS
 >1406353|large protein [Mumps virus genotype G]|AHE78343.1|Mumps orthorubulavirus|2560602
-YSDPNNHEVY>1406394|envelope protein [Severe acute respiratory syndrome coronavirus 2]|YP_009724392.1|Severe acute respiratory syndrome coronavirus 2|2697049
+YSDPNNHEVY
+>1406394|envelope protein [Severe acute respiratory syndrome coronavirus 2]|YP_009724392.1|Severe acute respiratory syndrome coronavirus 2|2697049
 YVYSRVKN
 >1406691|Nucleoprotein|P0DTC9.1|Severe acute respiratory syndrome coronavirus 2|2697049
 AALALLLLDRLNQLESKMS
@@ -8983,7 +9001,8 @@ LYAAVTNFLL
 >1846649|putative prepreS protein [Hepatitis B virus]|ABV21658.1|Hepatitis B virus|10407
 VWLSVIWMMWF
 >1852334|polymerase PB1 [Influenza A virus (A/New York/96/2002(H3N2))]|AAX47533.1|Influenza A virus|11320
-RYGFVANF>1852418|nucleoprotein [Influenza B virus]|AAD29164.1|Influenza B virus|11520
+RYGFVANF
+>1852418|nucleoprotein [Influenza B virus]|AAD29164.1|Influenza B virus|11520
 YFSPIRVTF
 >1855507|Replicase polyprotein 1ab|P0DTD1.1|Severe acute respiratory syndrome coronavirus 2|2697049
 AMDEFIERY
@@ -9994,7 +10013,8 @@ YNYLYRLFRKSNLKPFERD
 >2232732|Spike glycoprotein|P0DTC2.1|Severe acute respiratory syndrome coronavirus 2|2697049
 IPFAMQMAYRFNGI
 >2235314|Spike glycoprotein|P0DTC2.1|Severe acute respiratory syndrome coronavirus 2|2697049
-QLTPTWRVY>2236892|X protein|CAB41697.1|Hepatitis B virus|10407
+QLTPTWRVY
+>2236892|X protein|CAB41697.1|Hepatitis B virus|10407
 AARLCCQLDPARDVLCLRPVGAESR
 >2236899|polymerase|ACI24310.1|Hepatitis B virus|10407
 ARQRPGLCQVFADATPTGWGLAIGH
