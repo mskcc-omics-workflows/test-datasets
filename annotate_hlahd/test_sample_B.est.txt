@@ -1,0 +1,4 @@
+#Pair count	2
+#Best allele pair	2
+HLA-B*07:02:01:01	HLA-B*08:01:01:01	exon2:198.334:comp.0,exon3:215.602:comp.0	exon2:201.745:comp.0,exon3:209.401:comp.0
+HLA-B*07:05:01:01	HLA-B*08:01:01:01	exon2:198.334:comp.0,exon3:215.602:comp.0	exon2:201.745:comp.0,exon3:209.401:comp.0

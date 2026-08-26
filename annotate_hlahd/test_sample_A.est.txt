@@ -1,0 +1,5 @@
+#Pair count	2
+#Best allele pair	1
+HLA-A*02:01:01:01,HLA-A*02:01:01:02	HLA-A*24:02:01:01,HLA-A*24:02:01:02	exon2:248.512:comp.0,exon3:301.224:comp.0	exon2:255.107:comp.0,exon3:289.713:comp.0
+#Other ambiguous pair	1
+HLA-A*02:05:01	HLA-A*24:03:01
