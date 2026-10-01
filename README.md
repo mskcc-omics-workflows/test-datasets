@@ -1,17 +1,10 @@
-Test datasets for local MSK modules or subworkflows added into modules repo
+# filteredgeindels test datasets
 
-#### Branches
-1. dmp_demux (raw fastq files and metadata from sequencing for demultiplexing used in DMP)
-2. argos (test datasets for Argos Pipeline)
-3. neoantigen (test datasets for Neoantigen)
-4. hg37 (downsized reference files for hg37, and downsized chromosome 22)
-5. hla (test datasets for hla)
-6. chr22 (downsized chromosome 22)?
+Synthetic test data for the [`custom/filteredgeindels`](https://github.com/mskcc-omics-workflows/modules) module, which drops read pairs whose CIGAR begins or ends with an unanchored indel (Illumina/manta PR #288 rule: first/last two ops are `ID`, `DI`, `SI` or `SD`).
 
-#### Rules
-1. Master branch should stay empty. Actual test datasets are categories into different branches.
-2. Each test file should be LESS than 50 MB based on the requirement of GitHub
-3. Each branch contains datasets specifically for a pipeline (e.g. argos), project (e.g. dmp_demux), module/sub-workflow (e.g. neoantigen), or references (e.g. hg37)
-4. Each branch contains README file with brief introduction of the test datasets, prefer to have a link with the corresponding workflow repo (if applicable)
-5. If a new test dataset does not belong to all existing branches, create a `feature/<test-dataset>` branch based on `master` branch. Once the test dataset is ready to publish, contact our Review Team to do the final review and create new official branch.
-6. If the new test dataset fitting in existing branches, please make a PR to the corresponding branch.
+- `filteredgeindels/edge_indels.bam` (+ `.bai`) — 13 synthetic read pairs plus one supplementary record on a made-up `chr1`; no sample data. 6 pairs carry a flagged CIGAR edge, 7 are controls that must survive (hard-clip edge, lone edge indels, internal deletion, soft clip, plain match, unmapped pair).
+- `filteredgeindels/make_edge_indels_bam.py` — deterministic generator. Regenerate with:
+
+      python3 make_edge_indels_bam.py > edge_indels.sam
+      samtools sort -o edge_indels.bam edge_indels.sam
+      samtools index edge_indels.bam
