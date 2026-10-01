@@ -6,5 +6,5 @@ Synthetic test data for the [`custom/filteredgeindels`](https://github.com/mskcc
 - `filteredgeindels/make_edge_indels_bam.py` — deterministic generator. Regenerate with:
 
       python3 make_edge_indels_bam.py > edge_indels.sam
-      samtools sort -o edge_indels.bam edge_indels.sam
+      samtools sort --no-PG -o edge_indels.bam edge_indels.sam
       samtools index edge_indels.bam

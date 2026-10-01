@@ -5,7 +5,7 @@ Fully synthetic: random bases on a made-up contig, no sample data.
 
 Regenerate:
     python3 make_edge_indels_bam.py > edge_indels.sam
-    samtools sort -o edge_indels.bam edge_indels.sam
+    samtools sort --no-PG -o edge_indels.bam edge_indels.sam
     samtools index edge_indels.bam
 """
 import random
